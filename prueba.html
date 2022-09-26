@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+</head>
+<body>
+  <div style="height: 60%; width: 40%; margin-top:5%; margin-left:10%" id="webchat" role="main"></div>
+  <script>
+     // Set  the CSS rules.
+     const styleSet = window.WebChat.createStyleSet({
+         rootHeight: '100%',
+         rootWidth: '50%',
+         backgroundColor: 'red'
+      });
+
+    window.WebChat.renderWebChat({
+      directLine: window.WebChat.createDirectLine({
+          token: 'Rr4wibiZcYc.W0R-C2sSH6YORJKl1ktcUjGXZMGN7bxE96JkkS7cVfM'}),
+      styleSet
+    }, document.getElementById('webchat'));
+    
+  </script>
+</body>
